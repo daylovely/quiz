@@ -136,34 +136,38 @@ body {
 
 /* Button styling */
 #start-button {
-    width: 80%;  /* Matches the image width */
-    max-width: 600px; /* Same as the image */
+    width: 80%;  /* Matches image width */
+    max-width: 600px;
     height: 40px;
-    background-color: #3498db; /* Change this to your preferred color */
+    background-color: #3498db;
     color: white;
-    font-size: 18px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     margin-top: 10px;
-  
-/* Ensures text stays inside */
+
+    /* Flexbox for perfect text centering */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    /* Responsive font size */
+    font-size: min(4vw, 18px); /* Shrinks on small screens, max 18px */
+
+    /* Prevents text from overflowing */
+    padding: 0 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
 }
 
 #start-button:hover {
     background-color: #2980b9;
 }
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="900,400" size="100,100">&lt;div class=&quot;center-container&quot;&gt;
-    &lt;img src=&quot;https://i.imgur.com/ozRAYGq.gif&quot; class=&quot;responsive-image&quot;&gt;
-    &lt;button id=&quot;start-button&quot;&gt;DO YOU WANT TO HAVE A &#39;&#39;LOVELY&#39;&#39; DAY?&lt;/button&gt;
+    &lt;img src=&quot;https://i.imgur.com/Vdo8ygx.gif&quot; class=&quot;responsive-image&quot;&gt;
+    &lt;button id=&quot;start-button&quot;&gt;DO YOU WANT TO HAVE A LOVELY DAY?&lt;/button&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
