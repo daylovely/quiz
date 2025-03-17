@@ -104,11 +104,15 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="DAY FANTASTIC" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="EB28DF1E-328F-41F7-AA07-8C913C726FF3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#ui-bar {
+	<tw-storydata name="DAY FANTASTIC" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="EB28DF1E-328F-41F7-AA07-8C913C726FF3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+#ui-bar {
     display: none;
 }
 #story {
-    margin-left: 0 !important;
+    margin: 0 auto !important; /* Centers the entire story */
+    max-width: 100%; /* Ensures it doesn't exceed screen width */
+    text-align: center; /* Ensures content inside is centered */
 }
 
 body {
@@ -139,9 +143,8 @@ body {
     width: 80%;  /* Matches image width */
     max-width: 600px;
     height: 40px;
-    background-color: #3498db;
+    background-color: #516552;
     color: white;
-    font-weight: bold;
     border: none;
     cursor: pointer;
     margin-top: 10px;
@@ -163,11 +166,11 @@ body {
 }
 
 #start-button:hover {
-    background-color: #2980b9;
+    background-color: #64826b;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="900,400" size="100,100">&lt;div class=&quot;center-container&quot;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="TITLE" tags="" position="900,400" size="100,100">&lt;div class=&quot;center-container&quot;&gt;
     &lt;img src=&quot;https://i.imgur.com/Vdo8ygx.gif&quot; class=&quot;responsive-image&quot;&gt;
-    &lt;button id=&quot;start-button&quot;&gt;DO YOU WANT TO HAVE A LOVELY DAY?&lt;/button&gt;
+    &lt;button id=&quot;start-button&quot;&gt;&lt;span style=&quot;font-family: &#39;Azeret Mono&#39;, monospace; font-weight: 100; font-style: italic;&quot;&gt;DO YOU WANT TO HAVE A &lt;span style=&quot;font-family: &#39;Azeret Mono&#39;, monospace; font-weight: 400; font-style: italic; color: #ddaaab;&quot;&gt;LOVELY&lt;/span&gt; DAY?&lt;/span&gt;&lt;/button&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
