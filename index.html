@@ -131,12 +131,13 @@ body {
     width: 80%;  /* Adjust this if needed */
     max-width: 600px; /* Prevents it from getting too big on large screens */
     height: auto;
+    display: block;
 }
 
 /* Button styling */
 #start-button {
     width: 80%;  /* Matches the image width */
-    max-width: 560px; /* Same as the image */
+    max-width: 600px; /* Same as the image */
     height: 40px;
     background-color: #3498db; /* Change this to your preferred color */
     color: white;
@@ -144,6 +145,16 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+  
+/* Ensures text stays inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 }
 
 #start-button:hover {
